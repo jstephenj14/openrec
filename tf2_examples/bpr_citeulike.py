@@ -6,9 +6,9 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.keras import optimizers
 
-import dataloader
+from tf2_examples import dataloader
 
-raw_data = dataloader.load_citeulike('../dataset/')
+raw_data = dataloader.load_citeulike('C:/Users/jstep/PycharmProjects/openrec/sample_data/')
 dim_embed = 50
 total_iter = int(1e5)
 batch_size = 1000
